@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FreshClean Laundry - Jasa Cuci Kilat & Bersih</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+        body { font-family: 'Poppins', sans-serif; scroll-behavior: smooth; }
+        .hero-bg {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1545173168-9f1947eeba01?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md fixed w-full z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <i class="fas fa-tshirt text-blue-600 text-2xl"></i>
+                <span class="text-xl font-bold text-blue-800">FreshClean</span>
+            </div>
+            <div class="hidden md:flex space-x-8 font-medium">
+                <a href="#home" class="hover:text-blue-600 transition">Beranda</a>
+                <a href="#services" class="hover:text-blue-600 transition">Layanan</a>
+                <a href="#pricing" class="hover:text-blue-600 transition">Harga</a>
+                <a href="#contact" class="bg-blue-600 text-white px-5 py-2 rounded-full hover:bg-blue-700 transition">Pesan Sekarang</a>
+            </div>
+            <button class="md:hidden text-2xl" id="menuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-bg h-screen flex items-center justify-center text-center text-white px-4">
+        <div class="max-w-3xl">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">Pakaian Bersih & Wangi Tanpa Ribet</h1>
+            <p class="text-lg md:text-xl mb-8 opacity-90">Kami merawat pakaian Anda dengan sepenuh hati menggunakan teknologi modern dan deterjen ramah lingkungan.</p>
+            <div class="flex flex-col md:flex-row justify-center gap-4">
+                <a href="#services" class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-semibold text-lg transition">Lihat Layanan</a>
+                <a href="#contact" class="bg-white hover:bg-gray-100 text-blue-800 px-8 py-3 rounded-lg font-semibold text-lg transition">Jadwalkan Antar-Jemput</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-12 bg-blue-600 text-white">
+        <div class="container mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+            <div>
+                <div class="text-3xl font-bold">5000+</div>
+                <div class="text-sm opacity-80">Pelanggan Puas</div>
+            </div>
+            <div>
+                <div class="text-3xl font-bold">10+</div>
+                <div class="text-sm opacity-80">Tahun Pengalaman</div>
+            </div>
+            <div>
+                <div class="text-3xl font-bold">24 Jam</div>
+                <div class="text-sm opacity-80">Layanan Kilat</div>
+            </div>
+            <div>
+                <div class="text-3xl font-bold">100%</div>
+                <div class="text-sm opacity-80">Garansi Bersih</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-4">Layanan Kami</h2>
+            <p class="text-gray-600 mb-12 max-w-2xl mx-auto">Solusi lengkap untuk semua kebutuhan perawatan kain Anda, mulai dari pakaian harian hingga perlengkapan tidur.</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="p-8 border rounded-2xl hover:shadow-xl transition group">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-blue-600 transition">
+                        <i class="fas fa-soap text-2xl text-blue-600 group-hover:text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Cuci Lipat</h3>
+                    <p class="text-gray-600">Cuci bersih menggunakan deterjen premium, dikeringkan, dan dilipat rapi siap masuk lemari.</p>
+                </div>
+                <!-- Service 2 -->
+                <div class="p-8 border rounded-2xl hover:shadow-xl transition group">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-blue-600 transition">
+                        <i class="fas fa-wind text-2xl text-blue-600 group-hover:text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Cuci Setrika</h3>
+                    <p class="text-gray-600">Layanan lengkap cuci hingga setrika uap yang membuat pakaian halus dan bebas kuman.</p>
+                </div>
+                <!-- Service 3 -->
+                <div class="p-8 border rounded-2xl hover:shadow-xl transition group">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-blue-600 transition">
+                        <i class="fas fa-sparkles text-2xl text-blue-600 group-hover:text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Dry Cleaning</h3>
+                    <p class="text-xl font-semibold mb-3">Perawatan khusus untuk jas, kebaya, atau kain halus lainnya yang tidak boleh terkena air banyak.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">Daftar Harga</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Price Card 1 -->
+                <div class="bg-white p-6 rounded-xl shadow-sm border-t-4 border-blue-400">
+                    <h4 class="font-bold text-lg mb-4 text-blue-600">Kiloan Reguler</h4>
+                    <ul class="space-y-3">
+                        <li class="flex justify-between"><span>Cuci Lipat</span> <b>Rp 7.000/kg</b></li>
+                        <li class="flex justify-between"><span>Cuci Setrika</span> <b>Rp 10.000/kg</b></li>
+                        <li class="flex justify-between"><span>Setrika Saja</span> <b>Rp 6.000/kg</b></li>
+                    </ul>
+                    <p class="mt-4 text-xs text-gray-400">*Estimasi selesai 2-3 hari</p>
+                </div>
+                <!-- Price Card 2 (Highlight) -->
+                <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-orange-500 scale-105 z-10">
+                    <div class="flex justify-between items-start">
+                        <h4 class="font-bold text-lg mb-4 text-orange-600">Express (1 Hari)</h4>
+                        <span class="bg-orange-100 text-orange-600 text-xs px-2 py-1 rounded">Populer</span>
+                    </div>
+                    <ul class="space-y-3">
+                        <li class="flex justify-between"><span>Cuci Lipat</span> <b>Rp 12.000/kg</b></li>
+                        <li class="flex justify-between"><span>Cuci Setrika</span> <b>Rp 15.000/kg</b></li>
+                        <li class="flex justify-between"><span>Setrika Saja</span> <b>Rp 10.000/kg</b></li>
+                    </ul>
+                </div>
+                <!-- Price Card 3 -->
+                <div class="bg-white p-6 rounded-xl shadow-sm border-t-4 border-blue-400">
+                    <h4 class="font-bold text-lg mb-4 text-blue-600">Satuan Khusus</h4>
+                    <ul class="space-y-3">
+                        <li class="flex justify-between"><span>Bed Cover</span> <b>Rp 25.000/pcs</b></li>
+                        <li class="flex justify-between"><span>Jas/Blazer</span> <b>Rp 35.000/pcs</b></li>
+                        <li class="flex justify-between"><span>Sepatu</span> <b>Rp 30.000/psg</b></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order / Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row gap-12">
+            <div class="md:w-1/2">
+                <h2 class="text-3xl font-bold mb-6">Pesan Antar-Jemput</h2>
+                <p class="text-gray-600 mb-8">Malas keluar rumah? Tenang, kurir kami siap menjemput cucian kotor Anda dan mengantarkannya kembali dalam keadaan bersih dan rapi.</p>
+                
+                <div class="space-y-4">
+                    <div class="flex items-center space-x-4">
+                        <div class="w-10 h-10 bg-green-100 text-green-600 rounded-full flex items-center justify-center">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <div>
+                            <p class="font-semibold">WhatsApp</p>
+                            <p class="text-sm text-gray-500">0812-3456-7890</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <div class="w-10 h-10 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <p class="font-semibold">Lokasi</p>
+                            <p class="text-sm text-gray-500">Jl. Melati No. 123, Jakarta Selatan</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="md:w-1/2 bg-gray-50 p-8 rounded-2xl shadow-inner">
+                <form id="orderForm" class="space-y-4">
+                    <div>
+                        <label class="block text-sm font-medium mb-1">Nama Lengkap</label>
+                        <input type="text" class="w-full p-3 rounded-lg border focus:ring-2 focus:ring-blue-500 outline-none" placeholder="Masukkan nama Anda">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium mb-1">Alamat Lengkap</label>
+                        <textarea class="w-full p-3 rounded-lg border focus:ring-2 focus:ring-blue-500 outline-none" rows="3" placeholder="Alamat penjemputan"></textarea>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium mb-1">Jenis Layanan</label>
+                        <select class="w-full p-3 rounded-lg border focus:ring-2 focus:ring-blue-500 outline-none">
+                            <option>Cuci Setrika Reguler</option>
+                            <option>Cuci Setrika Express</option>
+                            <option>Dry Cleaning</option>
+                            <option>Hanya Setrika</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="w-full bg-blue-600 text-white font-bold py-3 rounded-lg hover:bg-blue-700 transition">Kirim Pesanan</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-900 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div class="col-span-1 md:col-span-2">
+                    <div class="flex items-center space-x-2 mb-4">
+                        <i class="fas fa-tshirt text-2xl text-blue-400"></i>
+                        <span class="text-2xl font-bold">FreshClean</span>
+                    </div>
+                    <p class="text-blue-200 max-w-sm">Memberikan standar kebersihan tertinggi untuk pakaian Anda. Cepat, bersih, dan terjangkau.</p>
+                </div>
+                <div>
+                    <h5 class="font-bold mb-4">Tautan Cepat</h5>
+                    <ul class="space-y-2 text-blue-200">
+                        <li><a href="#" class="hover:text-white">Kebijakan Privasi</a></li>
+                        <li><a href="#" class="hover:text-white">Syarat & Ketentuan</a></li>
+                        <li><a href="#" class="hover:text-white">FAQ</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="font-bold mb-4">Ikuti Kami</h5>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-xl hover:text-blue-400"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-xl hover:text-blue-400"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-xl hover:text-blue-400"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-blue-800 pt-8 text-center text-blue-300 text-sm">
+                &copy; 2024 FreshClean Laundry. Seluruh Hak Cipta Dilindungi.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Pesan Terkirim Mockup
+        document.getElementById('orderForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const messageBox = document.createElement('div');
+            messageBox.className = 'fixed top-10 left-1/2 -translate-x-1/2 bg-green-500 text-white px-6 py-3 rounded-lg shadow-lg z-[100] animate-bounce';
+            messageBox.innerText = 'Pesanan Anda telah diterima! Kurir kami akan segera menghubungi Anda.';
+            document.body.appendChild(messageBox);
+            
+            this.reset();
+            setTimeout(() => messageBox.remove(), 4000);
+        });
+
+        // Mobile Menu Toggle (Simplified)
+        document.getElementById('menuBtn').addEventListener('click', function() {
+            const nav = document.querySelector('.md\\:flex');
+            nav.classList.toggle('hidden');
+            nav.classList.toggle('flex');
+            nav.classList.toggle('flex-col');
+            nav.classList.toggle('absolute');
+            nav.classList.toggle('top-full');
+            nav.classList.toggle('left-0');
+            nav.classList.toggle('bg-white');
+            nav.classList.toggle('w-full');
+            nav.classList.toggle('p-6');
+        });
+    </script>
+</body>
+</html>
